@@ -42,7 +42,7 @@ public class somedayActivity extends Activity {
                     "271 Гл. Зд.");
             tvfor12.setText("Философия (Лекция)\n235 Гл. Зд");
             tvfor14.setText("Теоретическая механика\n406 Гидрак");
-            tvfor16.setText("Математика (Упражнения)\n505 9");
+            tvfor16.setText("Математика (упражнения)\n505 9");
         }
         else if (intent.getStringExtra("day").equals("wen"))
         {
@@ -51,7 +51,7 @@ public class somedayActivity extends Activity {
             tvfor10.setText("Теор. основы электротехники (упр)\n" +
                     "214 Гидрак");
             tvfor12.setText("Физра");
-            tvfor14.setText("Вычислительная математика (Лекция)\n359 2");
+            tvfor14.setText("Вычислительная математика (лекция)\n359 2");
             tvfor16.setText("Английский\n501 9");
         }
         else if (intent.getStringExtra("day").equals("thu"))
@@ -68,16 +68,16 @@ public class somedayActivity extends Activity {
             tvTitle.setText("Пятница");
             tvfor8.setText("Ничего нет!");
             tvfor10.setText("Ничего нет!");
-            tvfor12.setText("Информатика (Упражнения)\n309 НУК");
+            tvfor12.setText("Информатика (упражнения)\n309 НУК");
             tvfor14.setText("Практикум по проге\n313 НУК");
             tvfor16.setText("Теоретическая механика\n214 Гидрак");
         }
         else if (intent.getStringExtra("day").equals("sat"))
         {
             tvTitle.setText("Суббота");
-            tvfor8.setText("Информатика (лекция)\n 210 ИМОП");
+            tvfor8.setText("Информатика (кр+лаб)\n 210 ИМОП");
             tvfor10.setText("Вычислительная математика (Упражнения)\n313 НУК");
-            tvfor12.setText("Информатика \n210 ИМОП");
+            tvfor12.setText("Информатика (лекция) \n210 ИМОП");
             tvfor14.setText("Физра");
             tvfor16.setText("Ничего нет!");
         }
