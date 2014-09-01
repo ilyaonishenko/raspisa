@@ -4,10 +4,58 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            />
+    <TextView android:layout_width="match_parent"
+              android:text="Расписание 13503/3"
+              android:textSize="10pt"
+              android:layout_marginLeft="40pt"
+              android:layout_height="wrap_content"/>
+    <Button android:layout_width="match_parent"
+            android:text="Понедельник"
+            android:id="@+id/btnMon"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="5pt"
+            android:onClick="onClick"
+            android:layout_height="30pt"/>
+    <Button android:layout_width="match_parent"
+            android:text="Вторник"
+            android:id="@+id/btnTue"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="3pt"
+            android:onClick="onClick"
+            android:layout_height="30pt"/>
+    <Button android:layout_width="match_parent"
+            android:text="Среда"
+            android:id="@+id/btnWen"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="3pt"
+            android:onClick="onClick"
+            android:layout_height="30pt"/>
+    <Button android:layout_width="match_parent"
+            android:text="Четверг"
+            android:id="@+id/btnThu"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="3pt"
+            android:onClick="onClick"
+            android:layout_height="30pt"/>
+    <Button android:layout_width="match_parent"
+            android:text="Пятница"
+            android:id="@+id/btnFri"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="3pt"
+            android:onClick="onClick"
+            android:layout_height="30pt"/>
+    <Button android:layout_width="match_parent"
+            android:text="Суббота"
+            android:id="@+id/btnSat"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="3pt"
+            android:onClick="onClick"
+            android:layout_height="30pt"/>
 </LinearLayout>
 
