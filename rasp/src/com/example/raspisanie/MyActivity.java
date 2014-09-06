@@ -12,6 +12,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
      * Called when the activity is first created.
      */
     Button btnMon,btnTue,btnWen,btnThu,btnFri,btnSat;
+    Intent intent;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,6 @@ public class MyActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Intent intent;
         switch (v.getId())
         {
             case R.id.btnFri:
