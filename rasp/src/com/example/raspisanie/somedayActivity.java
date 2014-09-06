@@ -9,7 +9,7 @@ import android.widget.TextView;
  * Created by woqpw on 02.09.14.
  */
 public class somedayActivity extends Activity {
-    TextView tvTitle,tvfor8,tvfor10,tvfor12,tvfor14,tvfor16,tvTimeMon,tvTimeMon2;
+    TextView tvTitle,tvfor8,tvfor10,tvfor12,tvfor14,tvfor16,tvTimeMon,tvTimeMon2,tvfor18;
     public void onCreate (Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ public class somedayActivity extends Activity {
         tvTitle = (TextView)findViewById(R.id.tvTitle);
         tvTimeMon = (TextView)findViewById(R.id.tvTimeMon);
         tvTimeMon2 = (TextView)findViewById(R.id.tvTimeMon2);
+        tvfor18 = (TextView)findViewById(R.id.tvfor18);
         Intent intent = getIntent();
         if (intent.getStringExtra("day").equals("mon"))
         {
@@ -33,6 +34,7 @@ public class somedayActivity extends Activity {
             tvfor12.setText("Философия (Упражнения)\n406 Гидрак");
             tvfor14.setText("Теор. основы электротехники\n406 Гидрак");
             tvfor16.setText("Ничего!");
+            tvfor18.setText("Ничего!");
         }
         else if (intent.getStringExtra("day").equals("tue"))
         {
@@ -43,6 +45,7 @@ public class somedayActivity extends Activity {
             tvfor12.setText("Философия (Лекция)\n235 Гл. Зд");
             tvfor14.setText("Теоретическая механика\n406 Гидрак");
             tvfor16.setText("Математика (упражнения)\n505 9");
+            tvfor18.setText("Ничего!");
         }
         else if (intent.getStringExtra("day").equals("wen"))
         {
@@ -53,6 +56,7 @@ public class somedayActivity extends Activity {
             tvfor12.setText("Физра");
             tvfor14.setText("Вычислительная математика (лекция)\n359 2");
             tvfor16.setText("Английский\n501 9");
+            tvfor18.setText("Ничего!");
         }
         else if (intent.getStringExtra("day").equals("thu"))
         {
@@ -62,6 +66,7 @@ public class somedayActivity extends Activity {
             tvfor12.setText("Ничего нет!");
             tvfor14.setText("Ничего нет!");
             tvfor16.setText("Ничего нет!");
+            tvfor18.setText("Ничего!");
         }
         else if (intent.getStringExtra("day").equals("fri"))
         {
@@ -71,6 +76,7 @@ public class somedayActivity extends Activity {
             tvfor12.setText("Информатика (упражнения)\n309 НУК");
             tvfor14.setText("Практикум по проге\n313 НУК");
             tvfor16.setText("Теоретическая механика\n214 Гидрак");
+            tvfor18.setText("Теормех \n214 Гидрак");
         }
         else if (intent.getStringExtra("day").equals("sat"))
         {
@@ -80,6 +86,7 @@ public class somedayActivity extends Activity {
             tvfor12.setText("Информатика (лекция) \n210 ИМОП");
             tvfor14.setText("Физра");
             tvfor16.setText("Ничего нет!");
+            tvfor18.setText("Ничего!");
         }
     }
 }
