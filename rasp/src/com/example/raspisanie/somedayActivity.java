@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -29,16 +30,13 @@ public class somedayActivity extends Activity {
         tvTimeMon2 = (TextView)findViewById(R.id.tvTimeMon2);
         tvfor18 = (TextView)findViewById(R.id.tvfor18);
         tvWeek = (TextView)findViewById(R.id.tvWeek);
-        String input = "20140901";
-        String format = "yyyyMMdd";
         int week = 5;
-        SimpleDateFormat sdf = new SimpleDateFormat(format);
         try {
-            Date dt = sdf.parse(input);
+            Date dt = new Date();
             Calendar cl = Calendar.getInstance();
             cl.setTime(dt);
             week = cl.get(Calendar.WEEK_OF_YEAR);
-        } catch (ParseException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         String wee = "";
@@ -53,7 +51,7 @@ public class somedayActivity extends Activity {
         Intent intent = getIntent();
         if (wee=="first")
         {
-        tvWeek.setText("(Первая неделя)");
+            tvWeek.setText("(Первая неделя)");
         }
         else { tvWeek.setText("(Вторая неделя)");}
         if (intent.getStringExtra("day").equals("mon"))
